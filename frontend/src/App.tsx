@@ -1,25 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import {Route, Routes} from "react-router-dom";
+import {CalendarView} from "./pages/CalendarView";
+import {AddEventPage} from "./pages/AddEvent";
+import EventDetailsPage from "./pages/EventDetails";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Routes>
+          <Route path="/" element={<CalendarView />} />
+          <Route path="/events/new" element={<AddEventPage />} />
+          <Route path="/events/:id" element={<EventDetailsPage />} />
+      </Routes>
   );
 }
 
