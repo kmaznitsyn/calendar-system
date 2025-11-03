@@ -1,0 +1,31 @@
+services:
+  mysql:
+    image: mysql:8
+    container_name: my-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: calendar-system
+    ports:
+      - "3306:3306"
+    volumes:
+      - my-mysql-data:/var/lib/mysql
+    restart: always
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend
+    depends_on:
+      - mysql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/calendar-system
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_JPA_HIBERNATE_DDL_AUTO: none
+    ports:
+      - "8080:8080"
+    restart: always
+
+volumes:
+  my-mysql-data:

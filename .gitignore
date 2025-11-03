@@ -1,0 +1,21 @@
+# Node / React
+frontend/node_modules
+frontend/build
+frontend/.env
+
+# Java / Spring Boot
+backend/target
+backend/.env
+backend/.idea
+backend/.vscode
+backend/.classpath
+backend/.project
+backend/.settings/
+
+# Docker
+*.log
+*.pid
+
+# System files
+.DS_Store
+Thumbs.db
