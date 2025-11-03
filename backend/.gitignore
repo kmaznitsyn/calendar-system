@@ -1,8 +1,16 @@
-HELP.md
+# macOS system files
+.DS_Store
+
+# Build folders
 target/
-.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Spring / IDE stuff
+HELP.md
 
 ### STS ###
 .apt_generated
@@ -14,7 +22,7 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
