@@ -1,0 +1,7 @@
+/Users/mykolamaznitsyn/simple-calendar-system/backend/src/main/java/net/javaguides/backend/BackendApplication.java
+/Users/mykolamaznitsyn/simple-calendar-system/backend/src/main/java/net/javaguides/backend/config/WebConfig.java
+/Users/mykolamaznitsyn/simple-calendar-system/backend/src/main/java/net/javaguides/backend/controller/EventController.java
+/Users/mykolamaznitsyn/simple-calendar-system/backend/src/main/java/net/javaguides/backend/dto/CreateEventInput.java
+/Users/mykolamaznitsyn/simple-calendar-system/backend/src/main/java/net/javaguides/backend/model/Event.java
+/Users/mykolamaznitsyn/simple-calendar-system/backend/src/main/java/net/javaguides/backend/repository/EventRepository.java
+/Users/mykolamaznitsyn/simple-calendar-system/backend/src/main/java/net/javaguides/backend/service/EventService.java
